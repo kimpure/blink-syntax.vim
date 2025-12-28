@@ -46,6 +46,25 @@ syntax keyword blinkType
 	\ DateTimeMillis
 syntax keyword blinkBoolean true false
 
+syntax match blinkParen /[(){}[\]<>]/
+syntax region blinkBraceBlock
+    \ start=/{/
+    \ end=/}/
+    \ contains=
+    \   blinkComment,
+    \   blinkBlockComment,
+    \   blinkBraceBlock,
+    \   blinkType,
+    \   blinkTypeKeyword,
+    \   blinkParen,
+    \   blinkBoolean,
+    \   blinkOperator,
+    \   blinkOperatorOptional,
+    \   blinkSeparatorComma,
+    \   blinkNumber,
+    \   blinkString
+    \ keepend
+
 syntax match blinkOperator /[=:]|\\.\\.+/
 syntax match blinkOperatorOptional /?/
 syntax match blinkSeparatorComma /,/

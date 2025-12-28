@@ -1,0 +1,13 @@
+scope ExampleScope {
+    type InScopeType = u8
+    event InScopeEvent {
+        From: Server,
+        Type: Reliable,
+        Call: SingleSync,
+        Data: u8
+    }
+}
+ 
+struct Example {
+    Reference = ExampleScope.InScopeType
+}

@@ -1,4 +1,4 @@
-# blink-syntax.nvim
+# blink-syntax.vim
 [blink](https://github.com/1Axen/blink)
 
 preview

@@ -69,8 +69,8 @@ syntax match blinkOperator /[=:]|\\.\\.+/
 syntax match blinkOperatorOptional /?/
 syntax match blinkSeparatorComma /,/
 
-syntax match blinkNumber /\\d+?/
-syntax match blinkString /\"\\w+\"/
+syntax match blinkNumber /\<[0-9]\+\>/
+syntax match blinkString /"[^"]*"/
 
 highlight link blinkComment Comment
 highlight link blinkBlockComment Comment

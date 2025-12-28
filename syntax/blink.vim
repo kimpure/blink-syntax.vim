@@ -15,6 +15,8 @@ syntax region blinkScopeBlock
     \ contains=blinkScopeKeyword,blinkScopeName
     \ keepend
 
+syntax keyword blinkKeyword event option type function import export as
+
 syntax keyword blinkTypeKeyword enum map struct set
 syntax keyword blinkType 
     \ u8 
